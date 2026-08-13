@@ -4,8 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [lib]
-name = "dcs_computations"
-crate-type = ["cdylib", "rlib", "lib"]
+name = "danganronpa_creation_suite"
+crate-type = ["cdylib", "rlib"]
 
 
 [dependencies.pyo3]

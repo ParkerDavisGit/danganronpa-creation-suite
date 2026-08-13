@@ -3,7 +3,7 @@ use pyo3::prelude::*;
 
 #[pyfunction]
 fn gello() -> String {
-    "Gello Gorld!".to_string()
+    "Gello Gorld".to_string()
 }
 
 fn gorld(direction: i32) -> String {
@@ -16,7 +16,7 @@ fn gorld(direction: i32) -> String {
 }
 
 #[pymodule]
-fn dcs_computations(m: &Bound<'_, PyModule>) -> PyResult<()> {
+fn danganronpa_creation_suite(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(gello, m)?)?;
 
     Ok(())
